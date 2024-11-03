@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //method() => pre defined function
+        let objDet = {
+            name : "ajay",
+            age: 20,
+            city:"Rajam"
+        }
+
+        let str = JSON.stringify(objDet)
+        localStorage.setItem("name", str)
+
+        let store = localStorage.getItem("name")
+        // localStorage.getItem(str)
+        console.log(store);
+        
+        objDet.lang = "javascript"
+        console.log(objDet);
+        
+
+
+
+    </script>
+</body>
+</html>
